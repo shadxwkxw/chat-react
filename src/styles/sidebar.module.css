@@ -1,0 +1,101 @@
+.sidebar {
+    width: 250px;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.newChatButton {
+    width: 100%;
+    padding: 12px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #06D6A0;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.clearButton {
+    width: 100%;
+    padding: 12px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #b1b6a4;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    transition: color 0.3s ease;
+}
+
+.clearButton::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #ff7e5f, #7bfea0, #ff7e5f);
+    background-size: 600% 600%;
+    animation: gradientShift 6s ease infinite;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+    border-radius: 6px;
+}
+
+.clearButton:hover::before {
+    opacity: 1;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.newChatButton:hover {
+    background-color: #18a983;
+}
+
+.chatList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.chatButton {
+    width: 100%;
+    text-align: left;
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-bottom: 10px;
+}
+
+.chatButton:hover {
+    background-color: #dadada;
+}
+
+.chatsList {
+    margin: 10px;
+    color: #999a97;
+}

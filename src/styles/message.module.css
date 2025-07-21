@@ -1,0 +1,32 @@
+.messageContainerr {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+
+.left {
+  	align-items: flex-start;
+}
+
+.right {
+  	align-items: flex-end;
+}
+
+.bubble {
+	padding: 10px 14px;
+	border-radius: 15px;
+	max-width: 75%;
+	white-space: pre-wrap;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	color: #000;
+}
+
+.botBubble {
+  	background-color: #e8e8e8;
+	border-bottom-left-radius: 5px;
+}
+
+.userBubble {
+	border-bottom-right-radius: 5px;
+  	background-color: #06D6A0;
+}
