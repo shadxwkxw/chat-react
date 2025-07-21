@@ -30,3 +30,25 @@
 	border-bottom-right-radius: 5px;
   	background-color: #06D6A0;
 }
+
+@media (max-width: 1024px) {
+	.bubble {
+		max-width: 85%;
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 768px) {
+	.bubble {
+		max-width: 90%;
+		font-size: 14px;
+		padding: 8px 12px;
+	}
+}
+
+@media (max-width: 480px) {
+	.bubble {
+		max-width: 95%;
+		font-size: 13px;
+	}
+}

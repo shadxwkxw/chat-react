@@ -29,3 +29,29 @@
   	background-clip: text;
   	color: transparent;
 }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .messagesContainer {
+        padding: 20px 20px 80px 20px;
+    }
+
+    .centerText {
+        font-size: 18px;
+        margin-top: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .messagesContainer {
+        padding: 50px 30px 70px 30px;
+    }
+
+    .centerText {
+        font-size: 16px;
+        margin-top: 60%;
+    }
+}

@@ -3,6 +3,42 @@
     border-right: 1px solid #ccc;
     padding: 10px;
     background-color: #f9f9f9;
+    height: 100vh;
+    position: relative;
+}
+
+.menuButton {
+    display: none;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #06D6A0;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -260px;
+        height: 100%;
+        z-index: 1000;
+        padding-top: 50px;
+        transition: left 0.3s ease;
+    }
+
+    .sidebar.open {
+        left: 0;
+    }
+
+    .menuButton {
+        display: block;
+    }
 }
 
 .newChatButton {
@@ -98,4 +134,23 @@
 .chatsList {
     margin: 10px;
     color: #999a97;
+}
+
+.closeButton {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 26px;
+    color: #333;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+@media (max-width: 768px) {
+    .closeButton {
+        display: block;
+    }
 }
